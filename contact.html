@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT.STORE | Sigle Product</title>
+    <link rel="stylesheet" href="final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/IT_STORE1.png" alt="" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="product.html">Produk</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a class="active" href="contact.html">Kontak</a></li>
+                    <li><a href="account.html">Akun</a></li>
+                    <li><a href="cart.html"><img src="images/cart.png" width="20px"></a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!----------------- Contact Page ------------------------->
+   <div class="contact-page">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <h2>Hubungi Kami</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima architecto aut, voluptatem, numquam corrupti expedita nobis, neque aperiam adipisci earum odit sed eveniet dolorum placeat facere voluptatibus sit at? Rem.</p>
+                </div>
+                <!-- <img src="images/image1.png" width="100%"> -->
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div class="text">
+                            <h3>Address </h3>
+                            <p>90245 UIN Alauddin,<br>Makassar,Gowa,<br>42002</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="bi bi-telephone-fill"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>(0411) 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="bi bi-envelope-fill"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>UIN Alauddin@uin-alauddin ac.id</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Pesan</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Nama Lengkap</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Tulis pesan Anda...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Kirim">
+                        </div>
+                    </form>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+<!----------------- Footer ------------------------->
+        <div class="footer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and Ios Mobile Phone</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/IT_STORE.Putih.png" alt="">
+                        <p>Our Purpose Is To Sustainably Make teh Pleasure and Benefits of Sports Accessible to the many</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Usefull Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Pemrograman Web 1</p>
+            </div>
+        </div>
+
+<!----------------- JS For Toggle Menu ------------------------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+            }
+        </script>
+</body>
+</html>
